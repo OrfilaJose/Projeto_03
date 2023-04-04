@@ -1,0 +1,571 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing:border-box;/*O width do elemento será a soma do conteúdo+borda+padding*/
+}
+html,body{
+	height: 100%;
+}
+.clear{
+	clear: both;
+}
+header{
+	width: 100%;
+	height:90vh;
+	max-height:600px;
+	padding:12px 0px;
+	background-image: url('../Imagens/capa.png');
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-position: center;
+	padding-top: 30px;
+}
+.center{
+	width:90%;
+	max-width:1280px;
+	margin:0 auto;
+}
+header .logo{
+	float: left;
+	width:160px;
+	height:36px;
+	background-image: url('../Imagens/logo-danki.png');
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	background-position:center;
+	cursor:pointer;
+}
+.center nav.desktop-menu{
+	float:right;
+	margin-top:17px;
+}
+nav.desktop-menu ul{
+	list-style-type: none;
+}
+nav.desktop-menu ul li{
+	display: inline-block;
+	margin-right:10px;
+}
+nav.desktop-menu ul li a{
+	text-decoration: none;
+	font-size: 20px;
+	cursor: pointer;
+	color: white;
+}
+nav.mobile-menu{
+	display:none;
+	float:right;
+	width: 32px;
+	height: 32px;
+	margin-top: -30px;
+	background-image: url('../Imagens/menu.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	cursor: pointer;
+}
+nav.mobile-menu ul{
+	/*opacity:0;
+	transition:2s;*/
+	display:none;
+	position: absolute;
+	left: 0;
+	top:80px;
+	width: 100%;
+	padding:2px 2%;
+	background-color:white;
+	text-align: center;
+	list-style-type: none;
+}
+nav.mobile-menu ul li{
+	font-size: 20px;
+	text-decoration: none;
+	padding: 8px 0px;
+	border-bottom: 1px solid black;
+}
+nav.mobile-menu ul li a{
+	text-decoration: none;
+}
+nav.mobile-menu ul li:hover{
+	background-color:#ccc;
+}
+nav ul li a:hover{
+	font-style: italic;
+}
+.center .chamada{
+	float:right;
+	width: 60%;
+	max-width: 600px;
+	margin:130px 150px;
+	color: white;
+}
+.chamada h2{
+	font-size: 35px;
+}
+.chamada p{
+	font-size: 19px;
+	margin-top:15px;
+}
+section.sessao1{
+	width:100%;
+	height:400px;
+	padding:0px 2%;
+	background-color:#472562;
+}
+section.sessao1 .center{
+	max-width:1000px;
+	height: 100%;
+}
+.center .servicos{
+	width:50%;
+	float:left;
+	margin-top: 90px;
+	color: white;
+	position:relative;
+	z-index: 2;
+}
+.servicos h2{
+	font-size:34px;
+}
+.servicos ul{
+	list-style-position: inside;
+	margin-top: 10px;
+}
+.servicos ul li{
+	font-size: 20px;
+}
+/*.servicos*/ input[type="submit"]{
+	width: 170px;
+	height: 44px;
+	background-color: #ff703d;
+	border-radius:30px;
+	border: 0;
+	font-size: 17px;
+	color: white;
+	margin-top: 14px;
+	cursor: pointer;
+}
+.center .celular{
+	width:50%;
+	height:calc(100% + 40px);
+	float:left;
+	background-image:url('../Imagens/device.png');
+	background-repeat: no-repeat;
+	background-size:100% 100%;	
+	position:relative;
+	top:-40px;
+	z-index: 1;
+}
+section.sessao2{
+	width: 100%;
+	padding:60px 0px 0px 0px;
+	text-align: center;
+	background-color: #ccc;
+}
+.center .texto{
+	width: 100%;
+	margin: 0 auto;
+}
+.texto h2{
+	font-size: 30px;
+	margin-bottom: 12px;
+}
+.texto p{
+	font-size: 20px;
+	text-align:center;
+	line-height:30px;
+}
+section.sessao2 .mockup{
+	width:70%;
+	max-width: 1000px;
+	height:300px;
+	background-image: url('../Imagens/mockup.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
+	position: relative;
+	top:130px;
+	left: 50%;
+	right: 50%;
+	transform: translateX(-50%);
+}
+section.sessao3{
+	width: 100%;
+	background-color: dodgerblue;
+	display: flex;
+}
+section.sessao3 .parte1{
+	width: 50%;
+    padding: 140px 0px 90px 0px;
+    background-color:#a853ed;
+    float: left;
+}
+.parte1 .nosso-time{
+	width: 90%;
+	max-width:450px;
+	float: right;
+	margin-top: 20px;
+	margin-right:50px;
+	color: white;
+}
+.nosso-time h2{
+	font-size: 30px;
+	margin-bottom: 8px;
+}
+.nosso-time p{
+	font-size: 18px;
+	text-align: justify;
+	line-height:30px;
+}
+section.sessao3 .parte2{
+	width: 50%;
+	padding: 140px 0px 90px 0px;
+	background-color: white;
+	float:left;
+}
+.parte2 .pessoas{
+	width: 80%;
+	max-width:450px;
+	margin: 20px auto 0px auto;
+}
+.pessoas .pessoa01{
+	width: 100%;
+	height: 100%;
+	border: 1px solid #ccc;
+}
+.pessoa01 .info-pessoal .nome-profissao{
+	float: left;
+}
+.nome-profissao p{
+	padding-top:3px;
+}
+.pessoa01 .info-pessoal .foto3p4{
+	float: left;
+	width: 34px;
+	height: 34px;
+	border-radius: 17px;
+	background-color: red;
+	margin-left: 3px;
+	position: relative;
+	top:-4px;
+}
+.pessoa01 .descricao{
+	width: 100%;
+	padding-top: 5px;
+	font-size: 18px;
+}
+.parte2 .slider-bullets{
+	width:100%;
+	margin: 0 auto;
+	margin-top:12px;
+	padding: 5px 0px;
+	text-align: center;
+}
+.slider-bullets span{
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	background-color:black;
+	border-radius: 8px;
+	margin-right: 8px;
+	cursor: pointer;
+}
+.slider-bullets span:nth-of-type(2){
+	background-color: rgb(120,120,120);
+}
+.slider-bullets span:nth-of-type(3){
+	background-color: rgb(150,150,150);
+}
+section.sessao4{
+	width: 100%;
+	background-color:#472562;
+	padding: 100px 0px;
+}
+section.sessao4 .formulario-de-contato{
+	width:50%;
+	float: left;
+}
+.formulario-de-contato .formulario{
+	width:65%;
+	border: 2px solid rgb(200,200,200);
+	margin: 0 auto;
+	color: white;
+	padding: 3%;
+}
+.formulario h2{
+	font-size: 27px;
+}
+.formulario p{
+	font-size: 18px;
+	margin-top: 8px;
+}
+.formulario form{
+	width: 100%;
+}
+form input{
+	width: 100%;
+	max-width: 480px;
+	height:40px;
+	padding-left: 6px;
+	margin-top: 14px;
+	border-radius: 8px;
+	border:2px solid gray;
+	outline:0;
+	font-size:16px;
+	font-weight:bold;
+}
+form textarea{
+	width: 100%;
+	height: 150px;
+	resize: none;
+	margin-top: 12px;
+	padding:2%;
+	text-align: justify;
+	border-radius: 8px;
+	outline:0;
+}
+section.sessao4 .map-wraper{
+	width: 50%;
+	float: left;
+	color: white;
+	padding: 0px 10px;
+}
+.map-wraper h2{
+	font-size: 30px;
+}
+.map-wraper .map-wraper3{
+	width: 100%;
+	max-width: 480px;
+	position: relative;
+	margin-top: 10px;
+}
+.map-wraper3 .map-wraper2{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	padding-top: 100%;
+}
+.map-wraper2 .map{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width:100%;
+	height:100%;	
+	background-color: white;
+	border: 5px solid rgb(200,200,200);
+}
+footer{
+	width: 100%;
+	padding: 50px 0px;
+	background-color:black;
+	color: white;
+	text-align: center;
+}
+@media screen and (max-width:  1050px){
+	.parte1 .nosso-time{
+		width: 100%;
+		max-width:none;
+		float:none;
+		margin-top: 20px;
+		margin-right:0px;
+		padding: 0px 3%;
+	}
+	.parte2 .pessoas{
+		width: 100%;
+		max-width:none;
+		margin-top:20px;
+		margin-left:0px;
+		padding: 0px 3%;
+	}
+}
+@media screen and (max-width:  800px){
+	section.sessao3{
+		width: 100%;
+		display: block;
+	}
+	section.sessao3 .parte1{
+		width: 100%;
+	    padding:140px 0px 40px 0px;
+	    background-color:#a853ed;
+	    float:none;
+	}
+	.parte1 .nosso-time{
+		width: 80%;
+		max-width:none;
+		float:none;
+		/*margin-top: 20px;
+		margin-right:0px;*/
+		margin:20px auto 0px auto;
+		padding: 0px 3%;
+	}	
+	section.sessao3 .parte2{
+		width: 100%;
+		padding:40px 0px;
+		float: none;
+	}
+	.parte2 .pessoas{
+		width: 80%;
+		max-width:none;
+		/*margin-top:20px;
+		margin-left:0px;*/
+		margin: 20px auto 0px auto;
+		padding: 0px 3%;
+	}
+}
+@media screen and (max-width: 760px){
+	header{
+		width: 100%;
+		height:auto;
+		max-height:none;
+	}
+	header > .center > .chamada{
+		float:none;
+		width: 100%;
+		max-width:1200px;
+		margin:110px auto 50px auto;
+		color: white;
+	}
+	section.sessao1{
+		height:auto;
+		padding:40px 0px;
+		text-align: center;
+	}
+	section.sessao1 .center .servicos{
+		width:100%;
+		float:none;
+		margin:0px;
+		position:static;
+		display: inline-block;
+	}
+	.servicos ul{
+		list-style-position: inside;
+		margin-top: 10px;
+		display: inline-block;
+
+	}
+	.servicos ul li{
+		font-size: 20px;
+		float: none;
+		text-align:left;
+	}
+	.servicos input[type="submit"]{
+		margin-top: 17px;
+		display:inline-block;
+	}
+	.center .celular{
+		display: none;
+	}
+	section.sessao4 .formulario-de-contato{
+		width:100%;
+		float:none;
+	}
+	section.sessao4 .map-wraper{
+		width:100%;
+		height: 440px;
+		float: none;
+		margin-top:50px;
+	}
+	.map-wraper h2{
+		text-align: center;
+	}
+	.map-wraper .map-wraper3{
+		width: 100%;
+		max-width: 480px;
+		position: relative;		
+		margin: 10px auto 0px auto;
+	}
+	.formulario-de-contato .formulario form input[type="submit"]{
+		display:block;
+		margin:10px auto 0px auto;
+	}
+}
+@media screen and (max-width:  600px){
+	header > .center > .chamada{
+		float:none;
+		width: 100%;
+		max-width:1200px;
+		margin:220px auto 50px auto;
+		color: white;
+	}
+	nav.desktop-menu{
+		display: none;
+	}
+	nav.mobile-menu{
+		display:block;
+	}
+	nav.mobile-menu:hover ul{
+		/*opacity:1;
+		transition: 2s; comentei para o slideToggle() funcionar.
+		display:block;*/
+		left: 0;
+		top:80px;
+		width: 100%;
+		padding:2px 2%;
+		background-color:white;
+		text-align: center;
+		list-style-type: none;
+	}
+	section.sessao1{
+		height: auto;
+		padding: 20px 0px;
+	}
+	.center .servicos{
+		width:100%;
+		float:none;
+		margin-top:0px;
+		color: white;
+		position:relative;
+		left:0px;
+		z-index: 1;
+	}
+}
+@media screen and (max-height:500px){
+    header{
+		width: 100%;
+		height:auto;
+		max-height:none;
+	}
+	header > .center > .chamada{
+		float:none;
+		width: 100%;
+		max-width:none;
+		margin:110px auto 50px auto;
+		color: white;
+	}
+	section.sessao2 .center .texto p{
+		font-size: 20px;
+		text-align:justify;
+		line-height:30px;
+	}
+	
+}
+@media screen and (max-width: 550px){/*coloquei*/
+	.formulario-de-contato .formulario{
+		width:100%;
+		border: 2px solid rgb(200,200,200);
+		margin: 0 auto;
+		color: white;
+		padding: 3%;
+	}
+}
+@media screen and (max-width:  320px){
+	.parte1 .nosso-time{
+		width:97%;
+		max-width:none;
+		float:none;
+		margin:20px auto 0px auto;
+		padding: 0px 3%;
+	}	
+	.parte2 .pessoas{
+		width: 97%;
+		max-width:none;
+		margin: 20px auto 0px auto;
+		padding: 0px 3%;
+	}
+	section.sessao4 .map-wraper{
+		width:100%;
+		height:250px;
+		float: none;
+		margin-top:50px;
+	}
+}
